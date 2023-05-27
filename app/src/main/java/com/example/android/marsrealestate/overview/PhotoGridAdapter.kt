@@ -27,8 +27,8 @@ import com.example.android.marsrealestate.network.MarsProperty
 
 class PhotoGridAdapter(private val onClickListener: OnClickListener) : ListAdapter<MarsProperty, PhotoGridAdapter.MarsPropertyViewHolder>(DiffCallback) {
 	class MarsPropertyViewHolder(private var binding: GridViewItemBinding) : RecyclerView.ViewHolder(binding.root) {
-		fun bind(marsproperty: MarsProperty) {
-			binding.property = marsproperty
+		fun bind(marsProperty: MarsProperty) {
+			binding.property = marsProperty
 			binding.executePendingBindings()
 		}
 	}
